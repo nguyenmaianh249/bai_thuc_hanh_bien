@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Bài toán tính lãi suất ngân hàng </title>
+</head>
+
+<body>
+
+</body>
+<button onclick="tinhlaisuat()">Hãy cho tôi biết dữ liệu </button>
+<script>
+    function tinhlaisuat() {
+        alert("Nhập dữ liệu vào đây ");
+        let so_tien = parseFloat(prompt("Nhập số tiền : "));
+        let lai_suat1 = parseFloat(prompt("Nhập lãi suất  : "));
+        let nam = parseFloat(prompt("Nhập nam  : "));
+        let lai_suat = lai_suat1 / 100
+        let tienlai1nam = so_tien * lai_suat;
+        let tong = so_tien + nam * tienlai1nam
+        document.write("Tổng tiền gốc và lãi sau n năm là :" + tong)
+    }
+</script>
+
+</html>

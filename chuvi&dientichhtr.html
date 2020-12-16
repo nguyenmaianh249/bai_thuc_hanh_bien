@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Ứng dụng tính chu vi và diện tích hình tròn </title>
+</head>
+
+<body></body>
+<button onclick="tinh()">Hãy cho tôi biết bán kính của bạn</button>
+<script>
+    function tinh() {
+        alert("Nhập bán kính hình tròn vào đây ");
+        let R = Number(prompt("Nhập bán kính :"))
+        let C = 2 * R * 3.14
+        let S = R * R * 3.14
+        document.write("Chu vi hình tròn là :" + C)
+        document.write('<br/>')
+        document.write("Diện tích hình tròn là : " + S)
+    }
+</script>
+
+</html>
